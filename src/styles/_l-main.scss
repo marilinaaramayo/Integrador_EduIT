@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@use './h-mixin' as m;
+@use './h-fonts' as f;
+@use './h-breakpoint' as bp;
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Imprima&display=swap');
+
+
+
+
+.body_main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+//------------------------ DESKTOP ------------------------
+
+
+@media screen and (min-width: bp.$breakPoint--Medium) and (max-width: bp.$breakPoint--large){
+
+    .body_main_h{
+        color: #00C8C8;
+        font-family: f.$fontSubtitulos;
+        font-size: 26px;
+        letter-spacing: 3.9px;
+        margin: 0;
+        margin-bottom: 30px;
+        margin-left: 100px;
+    }
+    .body_main_section{
+        width: 100%;
+        height: auto;
+        @include m.flexRow();
+        justify-content: center;
+        gap:60px;
+    }
+    
+}
+//------------------------ MOBILE ------------------------
+@media screen and (min-width: 360px) and (max-width: bp.$breakPoint--Small){
+
+    .body_main_h{
+        color: #00C8C8;
+        font-family: f.$fontSubtitulos;
+        font-size: 26px;
+        width: 90%;
+        text-align: center;
+        letter-spacing: 3.9px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .body_main_section{
+        width: 100%;
+        height: auto;
+        @include m.flexColumn();
+        align-items: center;
+        gap:60px;
+    }
+    
+}
+
+
+
+.body_main_section_article{
+    @include m.flexColumn();
+    width: 200px;
+    height: 300px;
+}
+.body_main_section_article_header{
+border-bottom:solid 1px #DFDFDF ;
+}
+
+
+.body_main_section_article_header_img{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+.body_main_section_article_p{
+    color: #554B4B;
+    text-align: center;
+    font-family: f.$fontSubtitulos;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 5px;
+    margin: 0;
+}
+
+.body_main_section_article_p--tituloLibro{
+    font-size: 18px;
+}
+
+.body_main_section_article_p--Descripción{
+    font-size: 14px;
+}
+
+.body_main_section_article_footer_button{
+    @include m.btnCard();
+}
+
+
+// MAIN CONTACOS.HTML ----------------------------------------------------------------------------
+
+.main__form{
+    @include m.flexColumnForm();
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0px;
+}
+
+.main__form__label__input {
+    @include m.styleInput;
+    font-family: f.$fontSubtitulos;
+}
+
+.main__form__div__div{
+    @include m.flexColumnForm();
+    width: 50%;
+    margin-left: 20px;
+    color: #09244B;
+}
+.main__form__label{
+    @include m.flexColumnForm();
+    @include m.styleLabel;
+    color: #09244B;
+    width: 50%;
+    font-family: f.$fontSubtitulos;
+}
+
+//--------------------------------- NOSOTROS -------------------------------------------
+
+
+.body_main_p {
+    font-family: f.$fontSubtitulos;
+    width: 80%;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+
+}
+.body_main_div{
+    @include m.flexColumn();
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main__form__label__input--img{
+    border: none;
+}
+
+.main_form_button{
+    @include m.btnForm();
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="../src/styles.css">
+</head>
+<body class="body">
+    <header class="body_header">
+        <section class="body_header_section">
+            <article class="body_header_section_article body_header_section_article--flexRow">
+                <i class="body_header_section_icon"><img class="body_header_section_icon_img" src="./icon/facebook-svgrepo-com.svg"></i>
+                <i class="body_header_section_icon"><img class="body_header_section_icon_img" src="./icon/instagram-svgrepo-com.svg"></i>
+                <i class="body_header_section_icon"> <img class="body_header_section_icon_img" src="./icon/youtube-svgrepo-com.svg"></i>
+            </article>
+            <article class="body_header_section_article">
+                <i class="body_header_section_icon"><img class="body_header_section_icon_img body_header_section_icon_img--logo" src="./icon/atom-svgrepo-com.svg"></i>
+                <p class="body_header_section_p body_header_section_p--logo1">El rincón</p>
+                <p class="body_header_section_p body_header_section_p--logo2">lúdico</p>
+            </article>
+            <article class="body_header_section_article">
+                <i class="body_header_section_icon"><img class="body_header_section_icon_img body_header_section_icon_img--carrito" src="./icon/cart-4-svgrepo-com.svg"></i>
+                <p class="body_header_section_p">Mi carrito</p>
+            </article>
+        </section>
+        <nav class="body_header_nav">
+            <ul class="body_header_nav_ul">
+              <li class="body_header_nav_ul_li"><a class="body_header_nav_ul_li_a" href="./index.html">Inicio</a></li>
+              <li class="body_header_nav_ul_li"><a class="body_header_nav_ul_li_a" href="#">Categorías</a></li>
+              <li class="body_header_nav_ul_li"><a class="body_header_nav_ul_li_a" href="./contacto.html">Contacto</a></li>
+              <li class="body_header_nav_ul_li"><a class="body_header_nav_ul_li_a" href="./nosotros.html">Nosotros</a></li>
+              <li class="body_header_nav_ul_li"><a class="body_header_nav_ul_li_a" href="./registrar.html">Registrar</a></li>
+            </ul>
+          </nav>
+    </header>
+
+<!---------------------------------------- Main ---------------------------------------->
+    <main class="body_main">
+        <h2 class="body_main_h">Dejanos tu consulta</h2>
+        <form class="main__form" id="form" action="">
+            <!--------------  NOMBRE Y APELLIDO -------------->
+            <label class="main__form__label" for="nombre">Nombre
+                <input id="nombre" class="main__form__label__input" type="text">
+                <div class="msjError" id="mensaje-error-nombre" style="color: red;"></div>
+            </label>
+            
+            <label class="main__form__label" for="apellido">Apellido
+                <input id="apellido" class="main__form__label__input" type="text">
+                <div class="msjError" id="mensaje-error-apellido" style="color: red;"></div>
+            </label>
+            <!--------------  EMAIL -------------->
+            <label class="main__form__label" for="Email">Email
+                <input id="email" class="main__form__label__input" type="email">
+                <div class="msjError" id="mensaje-error-email" style="color: red;"></div>
+            </label>
+
+
+            <!--------------    Comentarios  -------------->
+            
+            <label class="main__form__label" for="Comentario">Comentario
+                <input id="comentario" class="main__form__label__input" type="text">
+                <div class="msjError" id="mensaje-error-comentario" style="color: red;"></div>
+            </label>
+
+            <!--------------    Boton  -------------->
+            <button id="botonEnviar" class="main_form_button" disabled>ENVIAR</button>
+        </form>
+
+    </main>
+
+    <footer class="body_footer">
+        <p class="body_footer_p">Formas de pago</p>
+    </footer>
+    <script src="../Js/contacto.js"></script>
+</body>
+</html>

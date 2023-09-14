@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@use './h-mixin' as m;
+@use './h-fonts' as f;
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Imprima&display=swap');
+
+.body_footer{
+    @include m.flexColumn();
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    background-color: #00C8C8;
+    margin: 0px;
+    padding: 0px;
+}
+
+.body_footer_p{
+    margin: 0;
+    color: #fff;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href="../src/styles.css">
+</head>
+<body class="body">
+    <header class="body_header">
+        <section class="body_header_section">
+            <article class="body_header_section_article body_header_section_article--flexRow">
+                <i class="body_header_section_icon"><img class="body_header_section_icon_img" src="./icon/facebook-svgrepo-com.svg"></i>
+                <i class="body_header_section_icon"><img class="body_header_section_icon_img" src="./icon/instagram-svgrepo-com.svg"></i>
+                <i class="body_header_section_icon"> <img class="body_header_section_icon_img" src="./icon/youtube-svgrepo-com.svg"></i>
+            </article>
+            <article class="body_header_section_article">
+                <i class="body_header_section_icon"><img class="body_header_section_icon_img body_header_section_icon_img--logo" src="./icon/atom-svgrepo-com.svg"></i>
+                <p class="body_header_section_p body_header_section_p--logo1">El rincón</p>
+                <p class="body_header_section_p body_header_section_p--logo2">lúdico</p>
+            </article>
+            <article class="body_header_section_article">
+                <i class="body_header_section_icon"><img class="body_header_section_icon_img body_header_section_icon_img--carrito" src="./icon/cart-4-svgrepo-com.svg"></i>
+                <p class="body_header_section_p">Mi carrito</p>
+            </article>
+        </section>
+        <nav class="body_header_nav">
+            <ul class="body_header_nav_ul">
+              <li class="body_header_nav_ul_li"><a class="body_header_nav_ul_li_a" href="./index.html">Inicio</a></li>
+              <li class="body_header_nav_ul_li"><a class="body_header_nav_ul_li_a" href="#">Categorías</a></li>
+              <li class="body_header_nav_ul_li"><a class="body_header_nav_ul_li_a" href="./contacto.html">Contacto</a></li>
+              <li class="body_header_nav_ul_li"><a class="body_header_nav_ul_li_a" href="./nosotros.html">Nosotros</a></li>
+              <li class="body_header_nav_ul_li"><a class="body_header_nav_ul_li_a" href="./registrar.html">Registrar</a></li>
+            </ul>
+          </nav>
+    </header>
+
+<!---------------------------------------- Main ---------------------------------------->
+    <main class="body_main">
+        <h2 class="body_main_h">Registrar producto</h2>
+        <form class="main__form" id="form" action="">
+            <!--------------  NOMBRE -------------->
+            <label class="main__form__label" for="nombre">Nombre
+                <input id="nombre" class="main__form__label__input" type="text">
+                <div class="msjError" id="mensaje-error-nombre" style="color: red;"></div>
+            </label>
+            <!--------------  PRECIO -------------->
+            <label class="main__form__label" for="precio">Precio
+                <input id="precio" class="main__form__label__input" type="number">
+                <div class="msjError" id="mensaje-error-precio" style="color: red;"></div>
+            </label>
+            <!--------------  STOCK -------------->
+            <label class="main__form__label" for="stock">Stock
+                <input id="stock" class="main__form__label__input" type="number">
+                <div class="msjError" id="mensaje-error-stock" style="color: red;"></div>
+            </label>
+            <!--------------  MARCA -------------->
+            <label class="main__form__label" for="marca">Marca
+                <input id="marca" class="main__form__label__input" type="text">
+                <div class="msjError" id="mensaje-error-marca" style="color: red;"></div>
+            </label>
+            <!--------------  CATEGORÍA -------------->
+            <label class="main__form__label" for="categoria">Categoría
+                <input id="categoria" class="main__form__label__input" type="text">
+                <div class="msjError" id="mensaje-error-categoria" style="color: red;"></div>
+            </label>
+            <!--------------  Descripción -------------->
+            <label class="main__form__label" for="descripcionCorta">Descripción corta
+                <input id="descripcionCorta" class="main__form__label__input" type="text">
+                <div class="msjError" id="mensaje-error-descripcionCorta" style="color: red;"></div>
+            </label>
+
+            <!--------------  Descripción larga -------------->
+            <label class="main__form__label" for="descripcionLarga">Descripción larga
+                <input id="descripcionLarga" class="main__form__label__input" type="text">
+                <div class="msjError" id="mensaje-error-descripcionLarga" style="color: red;"></div>
+            </label>
+            <!--------------    Envío sin cargo  -------------->
+            
+            <label class="main__form__label" for="EnvioSinCargo">Envío sin cargo
+                <p class="main__form__label_p">
+                    <input id="si" value="SI" class="main__form__label__input" type="radio">SI
+                    <input id="no" value="NO" class="main__form__label__input" type="radio">NO
+                </p>
+            </label>
+            <!--------------    Edad desde  -------------->
+            
+            <label class="main__form__label" for="edadDesde">Edad desde
+                <input id="edadDesde" class="main__form__label__input" type="number">
+                <div class="msjErrorEdad" id="mensaje-error-edadDesde" style="color: red;"></div>
+            </label>
+            <!--------------    Edad hasta  -------------->
+            
+            <label class="main__form__label" for="edadHasta">Edad hasta
+                <input id="edadHasta" class="main__form__label__input" type="number">
+                <div class="msjErrorEdad" id="mensaje-error-edadHasta" style="color: red;"></div>
+            </label>
+            <!--------------    Img  -------------->
+            
+            <label class="main__form__label" for="img">Imagen
+                <input id="img" class="main__form__label__input main__form__label__input--img" type="file" accept="image/*">
+                <div class="msjError" id="mensaje-error-img" style="color: red;"></div>
+            </label>
+
+            <!--------------    Boton  -------------->
+            <button id="botonEnviar" class="main_form_button" disabled>ENVIAR</button>
+        </form>
+
+    </main>
+    <footer class="body_footer">
+        <p class="body_footer_p">Formas de pago</p>
+    </footer>
+    <script src="../Js/alta.js"></script>
+</body>
+</html>
